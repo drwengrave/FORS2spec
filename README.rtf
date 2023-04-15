@@ -42,6 +42,19 @@ An additional remark consists in the method for the sky lines alignment, in orde
 There is the option --skyalign inside the fors_science recipe that allows the user to define the order of the polynomial function used for the alignment using a list of known sky lines.
 In the current version, the option --skyalign=-1 avoids any alignment. 
 
+-----------------------
+14/04/2023 update
 
+Included the grism 600B in the list of calibration folders.
+
+Included a python script that allows to check the 2D file and the vertical trace to find the pixel coordinates of the target trace
+Once identified the trace, the pixel values of the trace and a given background must be included in lines 30-33, e.g. where in the code is reported:
+
+#trace of spectrum
+trace = data[108:121,:] 
+error_trace = error[108:121,:]
+bkgd = data[150:163]
+
+working on a GUI for theselection of the target and bkg traces... stay tuned!
 
 Special thanks to Kasper Elm Heintz and Mariusz Gromadzki 
