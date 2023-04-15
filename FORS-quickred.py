@@ -182,6 +182,6 @@ print('You have successfully reduced the '+str(len(data_files))+' spectra of you
 print('')
 print('2D flux-calibrated spectra are saved in the corresponding output_GRISM folder')
 print('')
-print('Flux-calibrated 2D spectra are stored in the files starting with "mapped_flux_sci"')
+print('Flux-calibrated 2D spectra are stored in the files starting with "mapped_flux_sci_1"')
 print('')
 print('Good work and enjoy !!!')
